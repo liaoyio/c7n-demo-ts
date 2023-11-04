@@ -1,14 +1,15 @@
-import React, { Component } from "react";
+import { Component } from "react";
+import { ButtonColor } from "choerodon-ui/pro/lib/button/interface";
 
 import { Button } from "choerodon-ui/pro";
 import "./App.css";
-class App extends Component {
+
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Button>Button</Button>
+        <Button color={ButtonColor.primary}>Button</Button>
       </div>
     );
   }
 }
-export default App;
